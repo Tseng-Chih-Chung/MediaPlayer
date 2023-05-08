@@ -16,5 +16,12 @@
                 <GradientStop Color="#FF223BA4" Offset="0.989"/>
             </LinearGradientBrush>
         </Grid.Background>
+        <MediaElement x:Name="Med_show" HorizontalAlignment="Left" Height="251" Margin="155,92,0,0" VerticalAlignment="Top" Width="481"/>
+        <Button x:Name="btn_play" Content="播放" HorizontalAlignment="Left" Height="47" Margin="98,363,0,0" VerticalAlignment="Top" Width="115" FontSize="18"/>
+        <Button x:Name="btn_pause" Content="暫停" HorizontalAlignment="Left" Height="47" Margin="255,363,0,0" VerticalAlignment="Top" Width="115" FontSize="18"/>
+        <Button x:Name="btn_stop" Content="停止" HorizontalAlignment="Left" Height="47" Margin="419,363,0,0" VerticalAlignment="Top" Width="115" FontSize="18"/>
+        <Button x:Name="btn_exit" Content="離開" HorizontalAlignment="Left" Height="47" Margin="581,363,0,0" VerticalAlignment="Top" Width="115" FontSize="18"/>
+        <Button x:Name="btn_open" Content="開啟檔案" HorizontalAlignment="Left" Height="41" Margin="581,33,0,0" VerticalAlignment="Top" Width="117" FontSize="18" Click="btn_open_Click"/>
+        <TextBox x:Name="txt_filePath" HorizontalAlignment="Left" Height="41" Margin="138,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438" FontSize="18"/>
     </Grid>
 </Window>
