@@ -16,12 +16,14 @@
                 <GradientStop Color="#FF223BA4" Offset="0.989"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <MediaElement x:Name="Med_show" HorizontalAlignment="Left" Height="251" Margin="155,92,0,0" VerticalAlignment="Top" Width="481"/>
-        <Button x:Name="btn_play" Content="播放" HorizontalAlignment="Left" Height="47" Margin="98,363,0,0" VerticalAlignment="Top" Width="115" FontSize="18" Click="btn_play_Click"/>
-        <Button x:Name="btn_pause" Content="暫停" HorizontalAlignment="Left" Height="47" Margin="255,363,0,0" VerticalAlignment="Top" Width="115" FontSize="18" Click="btn_pause_Click"/>
-        <Button x:Name="btn_stop" Content="停止" HorizontalAlignment="Left" Height="47" Margin="419,363,0,0" VerticalAlignment="Top" Width="115" FontSize="18" Click="btn_stop_Click"/>
-        <Button x:Name="btn_exit" Content="離開" HorizontalAlignment="Left" Height="47" Margin="581,363,0,0" VerticalAlignment="Top" Width="115" FontSize="18" Click="btn_exit_Click"/>
+        <MediaElement x:Name="Med_show" HorizontalAlignment="Left" Height="251" Margin="155,79,0,0" VerticalAlignment="Top" Width="481" MediaOpened="Med_show_MediaOpened"/>
+        <Button x:Name="btn_play" Content="播放" HorizontalAlignment="Left" Height="47" Margin="26,363,0,0" VerticalAlignment="Top" Width="115" FontSize="18" Click="btn_play_Click"/>
+        <Button x:Name="btn_pause" Content="暫停" HorizontalAlignment="Left" Height="47" Margin="155,363,0,0" VerticalAlignment="Top" Width="115" FontSize="18" Click="btn_pause_Click"/>
+        <Button x:Name="btn_stop" Content="停止並重來" HorizontalAlignment="Left" Height="47" Margin="295,363,0,0" VerticalAlignment="Top" Width="115" FontSize="18" Click="btn_stop_Click"/>
+        <Button x:Name="btn_exit" Content="離開" HorizontalAlignment="Left" Height="47" Margin="438,363,0,0" VerticalAlignment="Top" Width="115" FontSize="18" Click="btn_exit_Click"/>
         <Button x:Name="btn_open" Content="開啟檔案" HorizontalAlignment="Left" Height="41" Margin="581,33,0,0" VerticalAlignment="Top" Width="117" FontSize="18" Click="btn_open_Click"/>
         <TextBox x:Name="txt_filePath" HorizontalAlignment="Left" Height="41" Margin="138,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="438" FontSize="16"/>
+        <Slider x:Name="sliProgress" HorizontalAlignment="Left" Margin="155,330,0,0" VerticalAlignment="Top" Height="28" Width="481" Background="Black" PreviewMouseLeftButtonUp="sliProgress_PreviewMouseLeftButtonUp"/>
+        <Slider x:Name="sliVolume" Height="47" Margin="581,373,49.6,0" Width="163" HorizontalAlignment="Center" VerticalAlignment="Center" Maximum="1" TickFrequency="0.01" Value="0.5" LargeChange="0.05" ValueChanged="sliVolume_ValueChanged"/>
     </Grid>
 </Window>
